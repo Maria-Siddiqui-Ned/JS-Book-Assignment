@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 17</title>
+    <style>
+        h2, h1{
+            text-align: center;
+            color: blue;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        h3{
+            font-size:30px;
+        }
+
+        body {font-family: Arial, Helvetica, sans-serif;}
+* {
+    box-sizing: border-box;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 5px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3a03ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+
+.form-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+    </style>
+</head>
+<body>
+        <h1>Assignment # 49-52</h1>
+        <h2>EVENTS</h2> 
+
+        <h3>Task 1 - Sign Up Form</h3>
+        <!-- 1. Create a signup form and display form data in your web page on submission. -->
+            
+        <form class="form-content" >
+            <div class="container">
+              <h3>Sign Up Form</h3>
+              <p>Please fill in this form to create an account.</p>
+              <hr>
+              <label for="fname"><b>First name</b></label>
+              <input type="text" placeholder="Enter First name" name="fname" required>
+
+              <label for="lname"><b>Last name</b></label>
+              <input type="text" placeholder="Enter Last name" name="lname" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+        
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+        
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+        
+              <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn" onclick="signUp()">Sign Up</button>
+              </div>
+            </div>
+            <p id="demo"></p>
+
+          </form>
+    
+
+          <h3>Task 2</h3>
+        <!-- 2. Suppose in your webpage there is content area in which you have entered your item details, but user can only see
+        some details on first look. When user clicks on “Read more” button, full detail of that particular item will be displayed. -->
+        <h4>Benefits of Reading Books: How It Can Positively Affect Your Life</h4>
+        <p id="readingPara">
+            A growing body of research indicates that reading literally changes your mind.
+            <a href="javascript:void(0);" onClick="expandText();"><em>Read more.</em></a>
+            </p>
+            
+        <p>
+
+           
+        <button onclick="myFunction()" id="moreBtn">Read more</button>
+
+        <h3>Task 3</h3>
+        <!-- 3. In previous assignment you have created a tabular data using javascript. Let’s modify that. Create a form which takes student’s details and show each student detail in
+        table. Each row of table must contain a delete button and an edit button. On click on delete button entire row should be deleted. On click on edit button, a hidden form will
+        appear with the values of that row. -->
+
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>

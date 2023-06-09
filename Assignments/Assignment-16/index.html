@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assignment 16</title>
+    <style>
+        h2, h1{
+            text-align: center;
+            color: blue;
+            font-weight: bolder;
+            text-decoration: underline;
+        }
+
+        h3{
+            font-size:30px;
+        }
+        
+        .phone table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid white;
+        }
+
+        .phone th, td{
+            text-align: center;
+            padding: 10px;
+        }
+        .student-record table{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .student-record th, 
+        .student-record td{
+            padding: 10px;
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+.cc {
+margin-left: auto;
+margin-right: auto;
+}
+
+.cc input {
+padding: 10px;
+width: 30px;
+text-align: center;
+margin: 10px;
+background-color: rgb(238, 234, 26);
+}
+          
+    </style>
+</head>
+<body>
+        <h1>Assignmentt # 43-48</h1>
+        <h2>EVENTS</h2> 
+
+        <!-- 1. Show an alert box on click on a link -->
+        <h3>Task 1</h3>
+        <a href="#" onClick="alert('Hello!! \nWelcome to our website');">Click to show Alert</a>
+
+        <!-- 2. Display some Mobile images in browser. On click on an image Show the message in alert to user. -->
+        <h3>Task 2 - Mobile Phone Lookup</h3>
+        <div class="phone">
+        <table>
+            <tr>
+                <td><a href="#" onClick="alert('Thanks for purchasing a phone from us');"><img width="75%" height="75%" src="images/samsung-galaxy-s23-ultra-pakistan-priceoye-kn3sm-270x270.webp" alt=""></a></td>
+                <td><a href="#" onClick="alert('Thanks for purchasing a phone from us');"><img width="75%" height="75%" src="images/infinix-hot-12-play-pakistan-priceoye-1sinx-270x270.webp" alt=""></a></td>
+                <td><a href="#" onClick="alert('Thanks for purchasing a phone from us');"><img width="75%" height="75%" src="images/samsung-galaxy-a73-pakistan-priceoye-1y28r-270x270.webp" alt=""></a></td>
+                <td><a href="#" onClick="alert('Thanks for purchasing a phone from us');"><img width="75%" height="75%" src="images/samsung-galaxy-a33-pakistan-priceoye-ylulk-270x270.webp" alt=""></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Samsung Galaxy S23 Ultra</h4>
+                    <p>Rs. 517,999</p>
+                    <p><s>Rs. 560,000</s> (8% OFF)</p>
+                    <a href="#">Order Now</a>
+                </td>
+                <td>
+                    <h4>Infinix Hot 12 Play</h4>
+                    <p>Rs. 38,999</p>
+                    <p><s>Rs. 43,999</s> (11% OFF)</p>
+                    <a href="#">Order Now</a>
+                </td>
+                <td>
+                    <h4>Samsung Galaxy A73</h4>
+                    <p>Rs. 155,999</p>
+                    <p><s>Rs. 170,500</s> (9% OFF)</p>
+                    <a href="#">Order Now</a>
+                </td>
+                <td>
+                    <h4>Samsung Galaxy A33 5G</h4>
+                    <p>Rs. 98,299</p>
+                    <p><s>Rs. 112,500</s> (13% OFF)</p>
+                    <a href="#">Order Now</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+        <!-- 3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be
+        deleted. -->
+        <h3>Task 3 - Student Record</h3>
+        <div  class="student-record">
+            <table id="record">
+            <thead>
+                <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Father Name</th>
+                <th>Percentage</th>
+                <th>Record</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Maria</td>
+                    <td>Zamir</td>
+                    <td>90%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Musfira</td>
+                    <td>Sufyan</td>
+                    <td>55%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Rabia</td>
+                    <td>Rizwan</td>
+                    <td>83%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Urooj</td>
+                    <td>Fazal</td>
+                    <td>76%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Fatima</td>
+                    <td>Mehmood</td>
+                    <td>69%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Naveen</td>
+                    <td>Waseem</td>
+                    <td>81%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Farah</td>
+                    <td>Bibi</td>
+                    <td>75%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Nabira</td>
+                    <td>Imran</td>
+                    <td>91%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                   <tr>
+                    <td>9</td>
+                    <td>Bareera</td>
+                    <td>Nameer</td>
+                    <td>68%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Hina</td>
+                    <td>Siddiqui</td>
+                    <td>90%</td>
+                    <td><input type="button" value="Delete Row" onclick="deleteRecord(this)"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout. -->
+    <h3>Task 4 -  Change the picture on mouseover</h3>
+           
+    <IMG style="margin-left: 200px;" SRC="images/smily.png" onmouseover="document.but.src='images/sad.png'"   onmouseout="document.but.src='images/smily.png'" NAME="but" >
+
+    <!-- 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter
+    value in browser. -->
+
+    <h3>Task 5 -  Counter</h3>
+    <div class="cc">
+    <button onclick="add()">+</button><input disabled id="counter" type="number" value="0"><button onclick="minus()">-</button>
+    <!-- <button onclick="add()">+</button> <button value="0" id="counter">0</button><button onclick="minus()">-</button> -->
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
