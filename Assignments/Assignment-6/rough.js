@@ -1,0 +1,14 @@
+var sub1 = prompt('Enter subject 1  name : ');
+var sub2 = prompt('Enter subject 2  name : ');
+var sub3 = prompt('Enter subject 3  name : ');
+var total_marks = 100;
+var marks_sub1 = +prompt('Enter obtained marks in subject 1 : ');
+var marks_sub2 = +prompt('Enter obtained marks in subject 2 : ');
+var marks_sub3 = +prompt('Enter obtained marks in subject 3 : ');
+var total_marks_all = 300;
+var Obtained_total_marks = marks_sub1 + marks_sub2 + marks_sub3;
+var percentage = (Obtained_total_marks / total_marks_all) * 100;
+var perc_sub1 = ((marks_sub1/total_marks) * 100);
+var perc_sub2 = ((marks_sub2/total_marks) * 100);
+var perc_sub3 = ((marks_sub3/total_marks) * 100);
+document.write("<table  style='text-align: center;  padding: 2px;'><tr><td><b>Subject</b></td><td><b>Total Marks</b></td><td><b>Obtained Marks</b></td><td><b>Percentage</b></td></tr><tr><td>" + sub1 + " </td><td>" + total_marks + "</td><td>" + marks_sub1 + "</td><td>" + perc_sub1 + " %</td></tr><tr><td>" + sub1 + " </td><td>" + total_marks + "</td><td>" + marks_sub2 + "</td><td>" + perc_sub2 + "% </td></tr><tr><td>" + sub1 + " </td><td>" + total_marks + "</td><td>" + marks_sub3 + "</td><td>" + perc_sub3 + " %</td></tr><tr><td></td><td><b>" + total_marks_all + "</b></td><td><b>" + Obtained_total_marks + "</b></td><td><b>" + percentage + " %</b></td></tr></table>");
