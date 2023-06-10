@@ -142,3 +142,73 @@ else{
 }
 
 // 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
+var number = prompt('Enter number to check whether it is divisible by 3 or not: ');
+if(number % 3 == 0){
+    alert('The number is divisible by 3');
+}
+else{
+    alert('The number is not divisible by 3');
+}
+
+// 9. Write a program that checks whether the given input is an even number or an odd number.
+
+var eo = prompt('Enter number to checks whether it is an even number or an odd number : ');
+if(eo % 2 == 0){
+    alert('It is an even number');
+}
+else if(eo % 2 != 0 ){
+    alert('It is an odd number');
+}
+
+// 10. Write a program that takes temperature as input and shows a message based on following criteria
+// a. T > 40 then “It is too hot outside.”
+// b. T > 30 then “The Weather today is Normal.”
+// c. T > 20 then “Today’s Weather is cool.”
+// d. T > 10 then “OMG! Today’s weather is so Cool.”
+
+var temperature = prompt("Enter the temperature (from 0 to 50)");
+
+if (temperature > 40){
+    alert("It's too hot outside ");
+}
+else if(temperature > 30){
+    alert(" The weather today's is Normal");
+}
+else if(temperature >20){
+    alert(" Today's weather is cool");
+}
+else if(temperature >10){
+    alert("OMG! Today's weather is cool");
+}
+else{
+    alert("Incorrect temerature");
+}
+
+// 11. Write a program to create a calculator for +,-,*, / & % using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+
+ var calc_num1 = +prompt("Enter first number for calculation");
+ var calc_num2 = +prompt("Enter second number for calculation");
+ var calc_opt = prompt("Enter the operator (+ - * /  % )");
+ if( calc_opt === "+"){
+     alert(calc_num1 + calc_num2);
+ }
+ else if(calc_opt === "-"){
+     alert(calc_num1 - calc_num2);
+ }
+ else if( calc_opt === "*"){
+     alert(calc_num1 * calc_num2);
+ }
+ else if( calc_opt === "/"){
+     alert(calc_num1 / calc_num2);
+ }
+ else if( calc_opt === "%"){
+     alert(calc_num1 % calc_num2);
+ }
+ else{
+     alert("Sorry! you selected wrong operation");
+ }
+ 
