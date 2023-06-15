@@ -68,12 +68,13 @@ document.write("<h3>Task 11</h3>")
 var input = prompt("Enter a word to convert into Title Case : ");
 var titleCase =  input.slice(0,1).toUpperCase()+ input.slice(1,input.length).toLowerCase(); 
 document.write("User input: "+ input +"<br>");
-document.write("Title case: " + titleCase);
+document.write("Title case: " + titleCase +"<br><br>");
 
 // 12. Write a program that converts the variable num to string.
 // var num = 35.36 ;
 // Remove the dot to display “3536” display in your browser.
 var num = 35.36;
+document.write("<h3>Task 12</h3>")
 document.write('Number : ' + num + '<br>');
 num = num.toString()
 nmu = num.replace('.','')
@@ -95,6 +96,8 @@ for (var i = 0; i < userName.length; i++) {
     }
     else{
         alert("You have entered a valid username!!");
+        break;
+
     }
 }
     
